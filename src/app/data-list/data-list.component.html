@@ -1,0 +1,22 @@
+
+<div class = "container">
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th> First Name</th>
+      <th> Last Name </th>
+      <th *ngIf="email"> Email Id </th>
+      <th *ngIf="dob"> Date of Birth </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let d of data">
+      <td>{{ d.firstname }}</td>
+      <td>{{ d.lastname }}</td>
+      <td *ngIf="email">{{ d.email }}</td>
+      <td *ngIf="dob">{{ d.dob }}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
